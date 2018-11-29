@@ -57,9 +57,9 @@ for i=1:length(n)
     if (n(i)==62)
         H(i)=1.02102/pi;
     else
-        numerador = sin(0.325*pi*(n(i)-62));
-        denominador = pi*(n(i)-62);
-        H(i)= (numerador/denominador)*(0.5 - 0.5*cos((2*pi*n(i))/(124)));
+        numer = sin(0.325*pi*(n(i)-62));
+        denom = pi*(n(i)-62);
+        H(i)= (numer/denom)*(0.5 - 0.5*cos((2*pi*n(i))/(124)));
     end    
 end
 
